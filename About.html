@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: pink;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(to right, #3f51b5, #9c27b0);
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        .logo {
+            width: 100px;
+            height: 80px;
+            background: white;
+            text-align: center;
+            line-height: 60px;
+
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5px;
+
+        }
+
+        .menu {
+            width: 500px;
+            height: 60px;
+            background: lightyellow;
+            border: 4px solid red;
+            text-align: center;
+            line-height: 60px;
+            padding-bottom: 20px;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            color: red;
+            background-color: black;
+            padding: 20px;
+            transition: 0.80;
+        }
+
+        .banner {
+            height: 350px;
+
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .banner img {
+            width: 95%;
+            height: 95%;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+
+
+
+        .content {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+            gap: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .left {
+            width: 30%;
+            background-color: lightgreen;
+
+
+        }
+
+        .small-box {
+            height: 100%;
+            border: 2px solid black;
+            margin-bottom: 20px;
+
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+
+        .small-box ol {
+            list-style-type: none;
+            line-height: 30px;
+
+        }
+
+        .small-box h3 {
+            text-align: center;
+        }
+
+        .right {
+            width: 70%;
+            border: 2px solid black;
+            min-height: 260px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+
+        .footer-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .footer-box {
+            width: 22%;
+            height: 120px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+
+        }
+
+
+
+        .copyright {
+            text-align: center;
+            background: linear-gradient(to right, #3f51b5, #9c27b0);
+            color: white;
+            padding: 15px;
+        }
+
+        @media(max-width:768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .footer-boxes {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .footer-box {
+                width: 40%;
+            }
+
+        }
+
+        @media(max-width:480px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .footer-box {
+                width: 100%;
+            }
+
+            .banner {
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="tz.png" alt="TechZone">
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Products.html">Services</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="banner"> <img src="Banner.png" alt="Banner Image"></div>
+
+        <div class="content">
+            <div class="left">
+                <div class="small-box">
+                    <h3 style="color:red">Why Choose Us?</h3>
+                    <br>
+                    <ol>
+                        <li>💻 Latest Laptops & Computers</li>
+                        <li>🖥️ Custom Gaming PC Builds</li>
+                        <li>🖨️ Printers & Office Equipment</li>
+                        <li>🌐 Networking Solutions</li>
+                        <li>🔒 CCTV & Security Systems</li>
+                        <li>🎧 Genuine Accessories & Peripherals</li>
+                        <li>⚡ Expert Technical Support</li>
+                        <li>💰 Best Prices & Special Offers</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="right">
+                <h3 style="color:red">About Our Store</h3>
+                <br>
+                <p> Welcome to TechZone Computer Store, your trusted destination for the latest computers, laptops,
+                    gaming systems, networking equipment, printers, and technology accessories.
+                    We are committed to providing high-quality products from leading brands while delivering exceptional
+                    customer service and technical support. Whether you are a student, professional, gamer, or business
+                    owner, we help you find the right technology solutions to meet your needs.
+                    Our showroom offers a wide range of products including gaming laptops, desktop computers,
+                    custom-built PCs, printers, SSDs, networking devices, CCTV systems, monitors, keyboards, mice,
+                    headphones, and many other electronic accessories</p>
+                <br>
+
+                <h3 style="color:red">Our Mission</h3>
+                <br>
+                <p>To provide reliable technology products and services that empower customers to work smarter, learn
+                    better, and stay connected.</p>
+                <br>
+
+                <h3 style="color:red">Our Vision</h3>
+                <br>
+                <p>To become the most trusted computer and electronics store by offering
+                    innovative products,
+                    competitive prices, and excellent customer satisfaction.</p>
+            </div>
+        </div>
+
+        <!-- <div class="footer-boxes">
+            <div class="footer-box">1</div>
+            <div class="footer-box">2</div>
+            <div class="footer-box">3</div>
+            <div class="footer-box">4</div>
+        </div> -->
+
+        <div class="copyright">
+            @ 2026 Website Name
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

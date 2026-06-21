@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: pink;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(to right, #3f51b5, #9c27b0);
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        .logo {
+            width: 100px;
+            height: 80px;
+            background: white;
+            text-align: center;
+            line-height: 60px;
+
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5px;
+
+        }
+
+        .menu {
+            width: 500px;
+            height: 60px;
+            background: lightyellow;
+            border: 4px solid red;
+            text-align: center;
+            line-height: 60px;
+            padding-bottom: 20px;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            color: red;
+            background-color: black;
+            padding: 20px;
+            transition: 0.80;
+        }
+
+        .banner {
+            height: 350px;
+
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .banner img {
+            width: 95%;
+            height: 95%;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            background-color: white;
+        }
+
+        .left {
+            width: 30%;
+            background-color: purple;
+            color: white;
+
+        }
+
+        .small-box {
+            height: 180px;
+
+            margin-bottom: 20px;
+            margin-left: 20px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .small-box h3 {
+            padding: 20px;
+            color: yellow;
+            font-size: 20px;
+
+        }
+
+        .small-box ol {
+            margin: 10px;
+            line-height: 40px;
+        }
+
+        .right {
+            width: 70%;
+
+            min-height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .right img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+
+        .copyright {
+            text-align: center;
+            background: linear-gradient(to right, #3f51b5, #9c27b0);
+            color: white;
+            padding: 15px;
+        }
+
+        @media(max-width:768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .footer-boxes {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .footer-box {
+                width: 40%;
+            }
+
+        }
+
+        @media(max-width:480px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .footer-box {
+                width: 100%;
+            }
+
+            .banner {
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="tz.png" alt="TechZone">
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Products.html">Services</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="banner">
+            <img src="Banner.png" alt="Banner Image">
+        </div>
+
+        <div class="content">
+
+            <div class="left">
+
+                <div class="small-box">
+
+                    <h3>Categories / Product Types</h3>
+
+
+                    <ol>
+                        <li>Gaming Laptops</li>
+
+                        <li>Custom RGB PCs</li>
+
+                        <li>Monitors</li>
+
+                        <li>Keyboards & Mice</li>
+
+                        <li>Headphones</li>
+
+                        <li> SSDs & Accessories</li>
+
+                        <li> Printers & Scanners</li>
+
+                        <li>software & Licenses (OS, Antivirus)</li>
+
+                        <li>External Accessories</li>
+
+                        <li> Security Devices (CCTV, Smart Locks)</li>
+
+                    </ol>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="showroom.png" alt="Our Showroom Banner">
+            </div>
+        </div>
+
+
+
+        <div class="copyright">
+            @ 2026 Website Name
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
